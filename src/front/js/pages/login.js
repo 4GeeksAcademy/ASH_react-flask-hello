@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 import { LoginForm } from "../component/login-form";
 
-
 export const Login = () => {
 	const { store, actions } = useContext(Context);
 

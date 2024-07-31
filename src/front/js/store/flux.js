@@ -97,24 +97,6 @@ const getState = ({ getStore, getActions, setStore }) => {
 						return false
 					}},
 
-					// checkToken: async () => {
-					// 	let token = localStorage.getItem("token");
-					// 	try {
-					// 		let response = await fetch(process.env.BACKEND_URL+"/api/check-token",{
-					// 			method: 'GET',
-					// 			headers: {'Content-Type': 'application/json', 'Authorization': `Bearer ${token}`}
-					// 			});
-					// 			  let data = await response.json()
-					// 			  if (response.ok){
-					// 				setStore({auth:data.logged})
-					// 				return true
-					// 			  }
-					// 			  return false
-					// 	} catch (error) {
-					// 		console.log(error);
-					// 		return false
-					// 	}},
-	
 			getMessage: async () => {
 				try{
 					// fetching data from the backend
